@@ -1,0 +1,70 @@
+.joinPage{
+    background: $red;
+    height: 100vh;
+    @include Flex(column);
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: inset 0px 0px 300px black;
+    position: relative;
+    overflow: hidden;
+    &__header{
+        color: white;
+        font-family: $displayfont;
+        font-size: 10rem;
+        margin-bottom: 0.5em;
+        z-index: 10;
+        text-shadow: 0px 0px 20px $darkgrey;
+    }
+    &__form{
+        @include Flex-Center(column);
+        width: 75vw;
+        max-width: 600px;
+        padding: 2em;
+        background: white;
+        border-radius: 20px;
+        box-shadow: 0px 0px 30px $darkgrey;
+        z-index: 10;
+        &__txtin,
+        &__sltin{
+            margin: 0.75em;
+            padding: 0.25em 1em;
+            width: 350px;
+            border-radius: 0px 0px 10px 10px;
+            border: 3px solid $red;
+            font-size: 1.25rem;
+            outline: none;
+            &:hover,
+            &:focus{
+                box-shadow: 0px 0px 5px $darkgrey;
+            }
+        }
+        &__sltin{
+            border-radius: 10px 10px 0px 0px;
+        }
+        &__btn{
+            margin: 0.75em;
+            padding: 0.5em 1.75em;
+            background: $lightred;
+            color: white;
+            font-family: $defaultfont;
+            font-size: 1.25rem;
+            border-radius: 10px;
+            transition: background 250ms ease-in;
+            outline: none;
+            &:hover,
+            &:focus{
+                background: darkred;
+                box-shadow: 0px 0px 5px $darkgrey;
+            }
+
+        }
+    }
+}
+
+.user--error{
+    box-shadow: 0px 0px 30px $lightred;
+    &:hover,
+    &:focus{
+        box-shadow: 0px 0px 30px $lightred;
+    }
+}

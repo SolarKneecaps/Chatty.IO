@@ -1,0 +1,48 @@
+.animation__list__items{
+    z-index: 2;
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 125px;
+    height: 125px;
+    border-radius: 20px;
+    background: rgba($lightred, 0.25);
+    bottom: -150px;
+   &-1{
+        right: 10%;
+        animation: cube 20s ease-out 4s infinite normal;
+        transform: rotate(-0.5turn);
+   }
+   &-2{
+        right: 25%;
+        animation: cube 20s ease-out 9s infinite normal;
+    }
+    &-3{
+        right: 40%;
+        animation: cube 20s ease-out 16s infinite normal;
+    }
+    &-4{
+        right: 65%;
+        transform: rotate(0.5turn);
+        animation: cube 20s ease-out 11s infinite normal;
+    }
+    &-5{
+        right: 80%;
+        transform: rotate(0.5turn);
+        animation: cube 20s ease-out 1s infinite normal;
+    }
+    &-6{
+        right: 90%;
+        animation: cube 20s ease-out 7s infinite normal;
+    }
+}
+
+@keyframes cube {
+    0%{
+
+    }
+    100%{
+        bottom: 800px;
+        transform: rotate(1turn);
+    }
+}

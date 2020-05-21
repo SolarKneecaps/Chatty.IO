@@ -1,0 +1,10 @@
+.chatRoom--container{
+    background: $red;
+    height: 100vh;
+    @include Flex(column);
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: inset 0px 0px 300px black;
+    position: relative;
+    overflow: hidden;
+}

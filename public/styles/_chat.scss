@@ -1,0 +1,49 @@
+.chat--container{
+    background: $grey;
+   @include Flex(column);
+    justify-content: flex-end;
+    overflow: hidden;
+    width: 45%;
+    max-width: 55ch;
+   @include scrollbars(20px, $darkred, $darkgrey, $lightred);
+   border-top-left-radius: 20px;
+   box-shadow: 0px 0px 30px $darkgrey;
+   z-index: 10;
+    &__input{
+        padding: 0.25em;
+        font-size: 1.1rem;
+    }
+    &__messages{
+        padding: 0.25em;
+        &__self{
+            background: $red;
+            color: white;
+            margin-left: auto;
+            min-width: 45%;
+            max-width: 20ch;
+            position: relative;
+            padding: 0.5em;
+            margin-bottom: 1.5em;
+            min-height: 55px;
+            border-radius: 10px;
+        }
+        &__other{
+            background: $darkgrey;
+            color: white;
+            margin-right: auto;
+            min-width: 45%;
+            max-width: 20ch;
+            position: relative;
+            padding: 0.5em;
+            margin-bottom: 1.5em;
+            min-height: 55px;
+            border-radius: 10px;
+        }
+        &__user{
+            position: absolute;
+            top: -15px;
+            right: 5px;
+            font-size: 0.75rem;
+        }
+    }
+}

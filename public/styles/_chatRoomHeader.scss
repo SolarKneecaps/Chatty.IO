@@ -1,0 +1,27 @@
+.chatRoomHeader{
+    @include Flex(row);
+    align-items: flex-end;
+    width: 100vw;
+    background: white;
+    padding: 0.5em 2em;
+    z-index: 10;
+    &__title{
+        font-family: $displayfont;
+    }
+    &__room{
+        margin-left: auto;
+        padding-right: 1em;
+        font-size: 1.2rem;
+    }
+    &__btn{
+        color: black;
+        font-size: 1.2rem;
+        font-family: $messagefont;
+        letter-spacing: -1px;
+        &:hover,
+        &:focus{
+            color: $darkred;
+            font-weight: bolder;
+        }
+    }
+}

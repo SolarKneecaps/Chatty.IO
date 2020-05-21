@@ -1,0 +1,7 @@
+.chatRoomContent--container{
+    @include Flex(row);
+    justify-content: center;
+    margin: auto;
+    height: 80vh;
+    width: 90vw;
+}

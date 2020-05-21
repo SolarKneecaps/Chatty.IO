@@ -1,0 +1,32 @@
+@mixin Flex($direction) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+@mixin Flex-Center($direction) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin scrollbars($size, $foreground-color, $background-color, $border-color) {
+    &::-webkit-scrollbar {
+      width:  $size;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: $foreground-color;
+      border-radius: 100vh;
+    }
+  
+    &::-webkit-scrollbar-track {
+      background: $background-color;
+      border: 1px solid $border-color;
+    }
+  
+    // For Internet Explorer
+    & {
+      scrollbar-face-color: $foreground-color;
+      scrollbar-track-color: $background-color;
+    }
+  }
